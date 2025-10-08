@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Калькулятор стоимости товара Каспи</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h4><a href = "index.html">Посчитать стоимость для Каспи (доставка включена)</a><br><br><a href = "#" style="background-color: #555555">Посчитать маржу со стоимости (доставка включена)</a></h4>
+		<form>
+			<div class="form-group">
+				<label for="result">Цена закупки</label>
+				<input type="number" id="result" name="result">
+			</div>
+			<div class="form-group">
+				<label for="weight">Выберите вариант:</label>
+				<select id="weight" name="weight">
+					<option value="5t">до 5 тыс. тг</option>
+					<option value="15t">до 15 тыс. тг</option>
+					<option value="5kg">до 5 кг</option>
+					<option value="15kg">до 15 кг</option>
+					<option value="50kg">до 50 кг</option>
+					<option value="50001">>50 кг</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="price">Цена на Каспи</label>
+				<input type="number" id="price" name="price">
+			</div>
+			<div class="form-group">
+				<label for="procent">Процент маржи:</label>
+				<output type="number" id="procent" name="procent">
+			</div>
+			<button type="button" onclick="calculate()">Рассчитать</button>
+		</form>
+		<div id="output"></div>
+	</div>
+
+	<script src="script2.js"></script>
+</body>
+</html>
+
