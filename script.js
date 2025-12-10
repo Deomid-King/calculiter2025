@@ -5,7 +5,7 @@ function calculate() {
 	var procent = document.getElementById("procent").value;
 
 	// рассчитываем результат
-	var output = (+price + +result +(weight == "5t" ? 846: weight == "15t" ? 1981 : weight == "5kg" ? 2821 : weight == "15kg" ? 3233 : weight == "50kg" ? 5361 : 8609)) / 0.83;
+	var output = (+price + +result +(weight == "5t" ? 596: weight == "15t" ? 1731 : weight == "5kg" ? 2571 : weight == "15kg" ? 2983 : weight == "50kg" ? 5111 : 8359)) / 0.83;
 
 	// расчет процентов
 	var procent = (+result / +price) * 100;
@@ -17,4 +17,5 @@ function calculate() {
 	document.getElementById("output").innerHTML = "Итоговая цена для Каспи: " + Math.round(output);
 
 }
+
 
